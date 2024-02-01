@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 276.7 295.8">
+ 
+<style> 
+
+svg:hover #w1, svg:hover #b1, svg:hover #w2, svg:hover #b2, svg:hover #wd, svg:hover #bd {
+
+animation: rotate 4s  ease forwards;
+transform-origin: center;
+}
+
+@keyframes rotate{
+
+0%{
+  transform: rotate(0deg) translate(0)
+}
+
+100%{
+  transform: rotate(360deg) translate(0)
+}
+
+
+}
+
+</style>
+<script>
+console.log('JavaScript is running!');
+
+
+
+const vectorGraphic = document.querySelector('#Layer_1');
+
+function logThisId() {
+    console.log(this);
+    console.log('ying yang:', this.id);
+}
+
+vectorGraphic.addEventListener('click', logThisId);
+</script>
+
+  <ellipse cx="138.35" cy="147.9" rx="138.35" ry="147.9" stroke-width="0"/>
+
+<!-- white half -->
+  <path id="w1"  d="M138.35,269.18c-60.87,0-113.45-54.29-113.45-121.28S77.48,26.62,138.35,26.62v242.56Z" fill="#fff" stroke-width="0"/>
+
+<!-- other black -->
+  <path id="b1" d="M138.35,26.62c60.87,0,113.45,54.29,113.45,121.28s-52.57,121.28-113.45,121.28V26.62Z" stroke-width="0"/>
+
+
+<!-- white other half -->
+  <ellipse id="w2"  cx="139.73" cy="208.54" rx="56.72" ry="60.64" fill="#fff" stroke-width="0"/>
+
+<!-- black dote -->
+  <ellipse id="bd" cx="139.73" cy="208.54" rx="23.52" ry="25.14" stroke-width="0"/> 
+
+  
+ <!-- black circle -->
+ <ellipse id="b2"  cx="136.97" cy="87.26" rx="56.72" ry="60.64" stroke-width="0"/>
+
+<!-- white dote -->
+ <ellipse id="wd" cx="138.35" cy="87.26" rx="23.52" ry="25.14" fill="#fff" stroke-width="0"/>  
+</svg>
